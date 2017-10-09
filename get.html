@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting Value using DOM</title>
+    <script type="text/javascript" src="03.utility3.js">
+        </script>
+</head>
+<body>
+    <p>
+        <label for="input-box">Start Number:</label>
+        <input type="number" id="input-box" value="23"/>
+    </p>
+
+    <p>
+        <label for="check-box">Style?</label>
+        <input type="checkbox" id="check-box" checked/>
+    </p>
+
+    <script>
+        var inp=document.getElementById('input-box');
+        util.writeln(inp.value);
+        var inp1=parseFloat(inp.value);
+        util.writeln(inp1+17);
+    </script>
+
+
+
+
+</body>
+</html>

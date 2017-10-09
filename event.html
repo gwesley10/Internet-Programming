@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Event example</title>
+</head>
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background:red; width:120px; height:20px; padding: 40px;">
+        Mouse over me
+    </div>
+
+    <script>
+        function mOver(obj){
+            obj.innerHTML="Mouse here";
+        }
+        function mOut(obj){
+            obj.innerHTML="Mouse out";
+        }
+
+    </script>
+
+</body>
+</html>

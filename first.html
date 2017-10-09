@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="assignment1-style.css" />
-    <meta charset="UTF-8">
-    <title>First</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM example</title>
 
-<ul>
-    <li>Soccer - game using a ball</li>
-    <li>pool - hole containing water</li>
-</ul>
+        <script type="text/javascript" src="03.utility3.js">
+        </script>
+    </head>
+    <body>
+        <p id="par1">
+            This is the first paragraph.<em>emphasized</em>text.
+        </p>
 
-<ol class="outline">
-    <li>Elephant</li>
-    <li>Tiger</li>
-</ol>
-<ol>
-    <li>Bear</li>
-    <li>Lion</li>
-</ol>
+        <p id="par2">
+            This is another paragraph.
+        </p>
 
-<a href="second.html" target="_blank"> Second Page </a>
-<br>
-<a href="http://www.serebii.net" target="_blank"> Serebii </a>
+        <script>
+            var n1=document.getElementById('par1');
+            util.par(n1.textContent);
+            util.par(n1.innerHTML);
+            var n2=document.getElementsByTagName('p');
+            util.par(n2.length);
 
-<p>
-    This is a paragraph. I did it mom! Get the camera!
-</p>
+            for(var i=0;i<n2.length;i++){
+                util.writeln(n2[i].innerHTML);
+            }
+        </script>
 
-</body>
+
+
+    </body>
 </html>
